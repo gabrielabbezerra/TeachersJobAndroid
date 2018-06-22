@@ -29,16 +29,15 @@
 
 
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/cameraImageViewCadastrar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:srcCompat="@android:drawable/ic_menu_camera" />
 
             <TextView
-                android:id="@+id/carregarFotoTextView"
+                android:id="@+id/carregarFotoTextViewCadastrar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
                 android:text="@string/carregar_foto"
                 android:textSize="@dimen/carregar_foto_size"
                 app:layout_gravity="center" />
@@ -47,10 +46,12 @@
         </android.support.v7.widget.GridLayout>
 
         <android.support.design.widget.TextInputLayout
+            android:id="@+id/nomeTextInputLayoutCadastrar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <android.support.design.widget.TextInputEditText
+                android:id="@+id/nomeTextInputEditTextCadastrar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin_tam"
@@ -58,10 +59,12 @@
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
+            android:id="@+id/telefoneTextInputLayoutCadastrar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <android.support.design.widget.TextInputEditText
+                android:id="@+id/telefoneTextInputEditTextCadastrar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin_tam"
@@ -69,10 +72,12 @@
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
+            android:id="@+id/cidadeTextInputLayoutCadastrar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <android.support.design.widget.TextInputEditText
+                android:id="@+id/cidadeTextInputEditTextCadastrar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin_tam"
@@ -80,10 +85,12 @@
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
+            android:id="@+id/emailTextInputLayoutCadastrar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <android.support.design.widget.TextInputEditText
+                android:id="@+id/emailTextInputEditTextCadastrar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin_tam"
@@ -91,40 +98,50 @@
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
+            android:id="@+id/senhaTextInputLayoutCadastrar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <android.support.design.widget.TextInputEditText
+                android:id="@+id/senhaTextInputEditTextCadastrar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin_tam"
-                android:hint="@string/senha" />
+                android:hint="@string/senha"
+                android:passwordToggleEnabled="true"
+                app:counterEnable="true"
+                app:counterMaxLenght="8"/>
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
+            android:id="@+id/confirmarSenhaTextInputLayoutCadastrar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <android.support.design.widget.TextInputEditText
+                android:id="@+id/confirmarSenhaTextInputEditTextCadastrar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin_tam"
-                android:hint="@string/confirmar_senha" />
-
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:layout_marginRight="@dimen/margin_confirmar"
-                android:layout_marginTop="@dimen/margin_confirmar"
-                android:background="@color/color_primary"
-                android:paddingLeft="@dimen/button_confirmar_padding"
-                android:paddingRight="@dimen/button_confirmar_padding"
-                android:text="@string/confirmar"
-                android:textColor="@color/color_text_buttons"
-                android:textStyle="bold" />
+                android:hint="@string/confirmar_senha"
+                android:passwordToggleEnabled="true"
+                app:counterEnable="true"
+                app:counterMaxLenght="8"/>
         </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/confirmarButtonCadastrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginRight="@dimen/margin_confirmar"
+            android:layout_marginTop="@dimen/margin_confirmar"
+            android:background="@color/color_primary"
+            android:paddingLeft="@dimen/button_confirmar_padding"
+            android:paddingRight="@dimen/button_confirmar_padding"
+            android:text="@string/confirmar"
+            android:textColor="@color/color_text_buttons"
+            android:textStyle="bold" />
 
     </LinearLayout>
 </ScrollView>

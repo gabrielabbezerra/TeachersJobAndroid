@@ -13,7 +13,7 @@
     <dimen name="distancia_padrao">10dp</dimen>
     <dimen name="magin_page_login">15dp</dimen>
     <dimen name="button_confirmar_padding">12dp</dimen>
-    <dimen name="maring_top_buttons">100dp</dimen>
+    <dimen name="maring_top_buttons">160dp</dimen>
     <dimen name="padding_buttons_right">10dp</dimen>
     <dimen name="carregar_foto_size">18dp</dimen>
     <dimen name="margin_confirmar">20dp</dimen>
