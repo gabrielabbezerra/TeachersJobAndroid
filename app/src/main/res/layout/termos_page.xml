@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/termosTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_confirmar"
+        android:gravity="center"
+        android:text="@string/termos"
+        android:textColor="@color/color_primary"
+        android:textSize="@dimen/titulo_size" />
+
+    <Button
+        android:id="@+id/euConcordoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginLeft="@dimen/margin_tam"
+        android:layout_marginRight="@dimen/magin_page_login"
+        android:layout_marginTop="520dp"
+        android:background="@color/color_primary"
+        android:paddingLeft="@dimen/button_confirmar_padding"
+        android:paddingRight="@dimen/button_confirmar_padding"
+        android:text="@string/eu_concordo"
+        android:textColor="@color/color_text_buttons"
+        android:textStyle="bold" />
+
+</LinearLayout>
+
+
+
+
+
