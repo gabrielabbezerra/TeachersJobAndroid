@@ -38,13 +38,11 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/margin_tam"
             android:hint="@string/senha"
-            android:passwordToggleEnabled="true"
-            app:counterEnable="true"
-            app:counterMaxLenght="8"/>
+            />
     </android.support.design.widget.TextInputLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnEntrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -62,6 +60,7 @@
         android:layout_margin="@dimen/margin_confirmar"
         android:layout_weight="1"
         android:text="@string/cadastre_se"
+        android:clickable="true"
         android:textColor="@color/color_primary"
         android:textSize="@dimen/cadastre_se_size" />
 </LinearLayout>

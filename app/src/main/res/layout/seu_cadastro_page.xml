@@ -108,8 +108,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin_tam"
-                android:hint="@string/senha_atual"
-                android:passwordToggleEnabled="true" />
+                android:hint="@string/senha_atual" />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
@@ -122,10 +121,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin_tam"
-                android:hint="@string/nova_senha"
-                android:passwordToggleEnabled="true"
-                app:counterEnable="true"
-                app:counterMaxLenght="8"/>
+                android:hint="@string/nova_senha"/>
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
@@ -139,9 +135,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin_tam"
                 android:hint="@string/confirmar_nova_senha"
-                android:passwordToggleEnabled="true"
-                app:counterEnable="true"
-                app:counterMaxLenght="8"/>
+                />
         </android.support.design.widget.TextInputLayout>
 
         <Button
