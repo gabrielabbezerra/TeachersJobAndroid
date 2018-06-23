@@ -47,6 +47,7 @@
     <string name="termos">Termos e Condições de Uso"</string>
     <string name="buscar_vagas">Buscar Vagas"</string>
     <string name="publicar_vaga">Publicar Vaga"</string>
+    <string name="login_incorreto">Usuário ou Senha Incorreto</string>
 </resources>
 
 

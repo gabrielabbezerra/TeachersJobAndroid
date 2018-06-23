@@ -21,13 +21,14 @@ public class UsuarioDAO{
     }
 
     public void writeUsuario(Usuario usuario){
-        ref.child(usuario.getNome()).setValue(usuario);
+        usuario.setIdUsuario(ref.push().getKey());
+        ref.child(usuario.getEmail()).setValue(usuario);
     }
 
     public Usuario getUsuario(Usuario usuario, ValueEventListener listener) {
 
         this.usuario = usuario;
-        this.ref.child(usuario.getNome()).addListenerForSingleValueEvent(listener);
+        this.ref.child(usuario.getEmail()).addListenerForSingleValueEvent(listener);
         return usuario;
     }
 

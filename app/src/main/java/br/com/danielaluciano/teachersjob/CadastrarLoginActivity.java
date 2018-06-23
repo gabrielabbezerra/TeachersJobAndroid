@@ -53,7 +53,7 @@ public class CadastrarLoginActivity extends AppCompatActivity {
         public void onClick(View view) {
             preencherObjeto(usuario);
 
-            eventCadastrarUsuario = new EventCadastrarUsuario(usuario,view);
+            eventCadastrarUsuario = new EventCadastrarUsuario(usuario,CadastrarLoginActivity.this);
 
             eventCadastrarUsuario.executarEvento();
         }
@@ -65,6 +65,7 @@ public class CadastrarLoginActivity extends AppCompatActivity {
         usuario.setNome(txtNome.getText().toString());
         usuario.setSenha(txtSenha.getText().toString());
         usuario.setTelefone(txtTelefone.getText().toString());
+        usuario.setConfirmarSenha(txtConfirmaSenha.getText().toString());
     }
 
 }

@@ -52,6 +52,7 @@ public class LoginActivity extends AppCompatActivity {
         this.txtSenha = (TextInputEditText) findViewById(R.id.senhaTextInputEditText);
         this.btnCadastrar = (TextView) findViewById(R.id.cadastreSeTextView);
         this.usuario = new Usuario();
+        this.entrar = new EventUsuarioEntrar(this,usuario);
     }
 
     @Override
@@ -93,7 +94,6 @@ public class LoginActivity extends AppCompatActivity {
             usuario.setEmail(txtEmail.getText().toString());
             usuario.setSenha(txtSenha.getText().toString());
 
-            entrar = new EventUsuarioEntrar(view,usuario);
             entrar.executarEvento();
 
         }
@@ -102,7 +102,7 @@ public class LoginActivity extends AppCompatActivity {
     View.OnClickListener btnCadastrarEvent = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            startActivity(new Intent(LoginActivity.this, CadastrarLoginActivity.class));
+            startActivity(new Intent(LoginActivity.this, TermosCondicoesActivity.class));
         }
     };
 

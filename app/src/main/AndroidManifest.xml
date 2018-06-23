@@ -25,6 +25,22 @@
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
 
+        <activity android:name=".MuralDeVagasActivity"
+            android:label="Mural de Vagas"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity android:name=".TermosCondicoesActivity"
+            android:label="Termos e Condições"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity android:name=".AreaAtuacaoActivity"
+            android:label="Área de Atuação"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+
     </application>
 
 </manifest>
