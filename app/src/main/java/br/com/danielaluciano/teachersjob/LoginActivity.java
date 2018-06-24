@@ -103,7 +103,7 @@ public class LoginActivity extends AppCompatActivity {
     View.OnClickListener btnCadastrarEvent = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            startActivity(new Intent(LoginActivity.this, TermosCondicoesActivity.class));
+            startActivity(new Intent(LoginActivity.this, CadastrarLoginActivity.class));
         }
     };
 

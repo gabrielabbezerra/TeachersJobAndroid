@@ -50,7 +50,7 @@ public class CadastrarLoginActivity extends AppCompatActivity {
         this.txtEmail = (TextInputEditText) findViewById(R.id.emailTextInputEditTextCadastrar);
         this.txtSenha = (TextInputEditText) findViewById(R.id.senhaTextInputEditTextCadastrar);
         this.txtConfirmaSenha = (TextInputEditText) findViewById(R.id.confirmarSenhaTextInputEditTextCadastrar);
-        this.btnFotoCadastrar = (ImageView) findViewById(R.id.cameraImageViewCadastrar);
+        this.btnFotoCadastrar = (ImageView) findViewById(R.id.fotoUsuarioImageView);
         this.eventSelecionarFoto = new EventSelecionarFoto(this);
         this.usuario = new Usuario();
     }
