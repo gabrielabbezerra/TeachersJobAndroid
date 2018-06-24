@@ -15,10 +15,12 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import br.com.danielaluciano.teachersjob.entidade.Usuario;
+import br.com.danielaluciano.teachersjob.events.EventSelecionarFoto;
 import br.com.danielaluciano.teachersjob.events.EventUsuarioEntrar;
 
 public class LoginActivity extends AppCompatActivity {
@@ -30,7 +32,6 @@ public class LoginActivity extends AppCompatActivity {
     private TextInputEditText txtSenha;
 
     private EventUsuarioEntrar entrar;
-
     private TextView btnCadastrar;
 
     @Override

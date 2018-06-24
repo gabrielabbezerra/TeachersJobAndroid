@@ -2,11 +2,14 @@ package br.com.danielaluciano.teachersjob.entidade;
 
 import com.google.firebase.database.Exclude;
 
+import java.util.Objects;
+
 public class Usuario {
 
     private String idUsuario;
     private String nome;
     private String telefone;
+    private String cidade;
     private String email;
     private String foto;
     private String senha;
@@ -85,15 +88,46 @@ public class Usuario {
         this.confirmarSenha = confirmarSenha;
     }
 
+    public String getCidade() {
+        return cidade;
+    }
+
+    public void setCidade(String cidade) {
+        this.cidade = cidade;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Usuario usuario = (Usuario) o;
+        return Objects.equals(idUsuario, usuario.idUsuario) &&
+                Objects.equals(nome, usuario.nome) &&
+                Objects.equals(telefone, usuario.telefone) &&
+                Objects.equals(cidade, usuario.cidade) &&
+                Objects.equals(email, usuario.email) &&
+                Objects.equals(foto, usuario.foto) &&
+                Objects.equals(senha, usuario.senha) &&
+                Objects.equals(confirmarSenha, usuario.confirmarSenha);
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(idUsuario, nome, telefone, cidade, email, foto, senha, confirmarSenha);
+    }
+
     @Override
     public String toString() {
         return "Usuario{" +
-                "idUsuario=" + idUsuario +
+                "idUsuario='" + idUsuario + '\'' +
                 ", nome='" + nome + '\'' +
                 ", telefone='" + telefone + '\'' +
+                ", cidade='" + cidade + '\'' +
                 ", email='" + email + '\'' +
                 ", foto='" + foto + '\'' +
                 ", senha='" + senha + '\'' +
+                ", confirmarSenha='" + confirmarSenha + '\'' +
                 '}';
     }
 }
